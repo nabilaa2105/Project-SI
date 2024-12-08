@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survei Kesehatan Mental - MindCareHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MindCareHub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profile.html">Profil</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="survey.html">Survei</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Survei Kesehatan Mental Anda</h2>
+            <p>Jawab pertanyaan berikut untuk mendapatkan wawasan tentang tingkat stres, kecemasan, atau kebahagiaan Anda:</p>
+
+            <form id="survey-form">
+                <label for="stress-level">1. Seberapa sering Anda merasa stres dalam seminggu terakhir?</label><br>
+                <select id="stress-level" name="stress-level">
+                    <option value="0">Tidak Pernah</option>
+                    <option value="1">Jarang</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="3">Sering</option>
+                    <option value="4">Sangat Sering</option>
+                </select><br><br>
+
+                <label for="anxiety-level">2. Seberapa sering Anda merasa cemas dalam seminggu terakhir?</label><br>
+                <select id="anxiety-level" name="anxiety-level">
+                    <option value="0">Tidak Pernah</option>
+                    <option value="1">Jarang</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="3">Sering</option>
+                    <option value="4">Sangat Sering</option>
+                </select><br><br>
+
+                <label for="happiness-level">3. Seberapa bahagia Anda merasa dalam seminggu terakhir?</label><br>
+                <select id="happiness-level" name="happiness-level">
+                    <option value="4">Sangat Bahagia</option>
+                    <option value="3">Bahagia</option>
+                    <option value="2">Biasa Saja</option>
+                    <option value="1">Kurang Bahagia</option>
+                    <option value="0">Tidak Bahagia</option>
+                </select><br><br>
+
+                <button type="button" onclick="calculateResults()">Kirim Jawaban</button>
+            </form>
+
+            <div id="survey-result" style="margin-top: 20px; font-size: 18px; color: #333;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MindCareHub</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare Hub - Pusat Perawatan Pikiran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="background-image: url('assets/nature.jpg'); background-size: cover; background-position: center;">
+        <h1>MindCare Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Selamat datang di MindCare Hub</h2>
+        <p>Temukan tips, meditasi, dan dukungan untuk membantu Anda merawat kesehatan mental Anda.</p>
+
+        <img src="assets/nature.jpg" alt="Pemandangan Alam Tenang" class="hero-image">
+
+        <h3>Bagaimana Perasaan Anda Hari Ini?</h3>
+        <label for="mood">Pilih kondisi mood Anda:</label>
+        <select id="mood" onchange="showResources()">
+            <option value="stres">Stres</option>
+            <option value="insomnia">Insomnia</option>
+            <option value="kecemasan">Kecemasan</option>
+        </select>
+
+        <div id="tips-container"></div>
+
+        <button onclick="startMeditation()">Mulai Meditasi</button>
+    </main>
+    <section>
+        <h3>Catatan Kesehatan Mental</h3>
+        <form id="mental-health-form">
+            <label for="feeling">Perasaan Anda Hari Ini:</label>
+            <textarea id="feeling" name="feeling" rows="4" placeholder="Tulis perasaan Anda di sini..."></textarea><br><br>
+
+            <label for="activity">Aktivitas yang Dilakukan:</label>
+            <textarea id="activity" name="activity" rows="4" placeholder="Apa aktivitas yang Anda lakukan hari ini?"></textarea><br><br>
+
+            <button type="button" onclick="saveNote()">Simpan Catatan</button>
+        </form>
+
+        <div id="confirmation-message"></div>
+    </section>
+</main>
+    <footer class="footer">
+        <div class="footer-text" > 
+            <p>&copy; 2024 MindCare Hub</p>
+            <img src="assets/logo-small.png.png" alt="logo footer" class="footer-logo">
+        </div>
+    </footer>
+    <script src="script.js" ></script>
+</body>
+</html>
